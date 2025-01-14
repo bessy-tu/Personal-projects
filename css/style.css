@@ -1,0 +1,627 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* 首頁 */
+body {
+    width: 100%;
+    /* background-color: #04090D; */
+}
+
+.contentfirst {
+    height: 100vh;
+}
+
+/* 背景圖 */
+.contentfirst img {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* 導覽列 */
+.header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+.logo img {
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+}
+
+.nav {
+    display: flex;
+}
+.nav a {
+    margin-right: 50px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav a:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    border-bottom:1.5px solid white;
+    transition: 0.4s;
+}
+
+/* 大標題 */
+.name {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 220px;
+    left: 150px;
+}
+.name p {
+    font-family: 'Abel';
+    font-size: 90px;
+    letter-spacing: 30px;
+    margin-left: 60px;
+    margin-top: 150px;
+}
+.name h1 {
+    font-size: 48px;
+    font-weight: lighter;
+    letter-spacing: 20px;
+    margin-left: 200px;
+    margin-top: -60px;
+}
+
+
+
+/* 飛行器初始位置 */
+.contentfirst .dataimg {
+    position: relative;
+    z-index: 1;
+    width: 900px;
+    height: 600px;
+    top: -300px;
+    left: 1800px;
+    /* transform: translate(50%, 50%) rotate(15deg); 螢幕外滑向中間 */
+    /* opacity: 0; */
+
+    /*動畫效果*/
+    transition: transform 5s ease-in;
+    /* transition: transform 10s ease-out;  */
+}
+
+/* 引言導語 */
+.intro {
+    margin-top: -30px;
+    background-image: url(../images/darkspace-1.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+}
+.intro p {
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    letter-spacing: 5px;
+    line-height: 70px;
+}
+
+/*主要內容區*/
+/* 第一層 */
+/* 小行星 */
+#content1 {
+    background-image: url(../images/darkspace-1.jpg);
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+}
+/* 左側卡片 */
+.box1 {
+    position: relative;
+    width: 50vw;
+    height: auto;
+}
+.box1 a {
+    text-decoration: none;
+}
+.box1 .card:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box1 .card {
+    background-image: url(../images/asteroid.png);
+    position: relative;
+    background-size: cover;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 60%;
+    height: 40%;
+    top: 35%;
+    left: 20%;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.box1 .card h2 {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box1 .card p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 14px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 210px; */
+}
+
+/* 右側卡片 */
+.box2 {
+    display: flex;
+    position: relative;
+    /* width: 450px; */
+    width: 50vw;
+    height: auto;
+} 
+.box2 a {
+    text-decoration: none;
+}
+.box2 .card1 {
+    background-image: url(../images/meteor\ shower-2.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 45%;
+    height: 45%;
+    top: 10%;
+    left: 5%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box2 .card1:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.card1 h2 {
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.card1 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 14px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 270px; */
+}
+
+.box2 .card2 {
+    background-image: url(../images/T-bigbang.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 45%;
+    height: 35%;
+    right: 8%;
+    top: 10%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box2 .card2:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.card2 h2 {
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.card2 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 14px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 40%; */
+    /* bottom: 10px; */
+}
+
+.box2 .card3 {
+    background-image: url(../images/crater.jpg);
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 45%;
+    height: 35%;
+    left: 3.5%;
+    top: 60%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box2 .card3:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.card3 h2 {
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.card3 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 14px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 40%; */
+}
+
+.box2 .card4 {
+    background-image: url(../images/dinosaur2.jpg);
+    position: absolute;
+    background-size: cover;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 35%;
+    height: 45%;
+    right: 8%;
+    top: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box2 .card4:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.card4 h2 {
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.card4 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    margin: 20px;
+    /* margin-top: 350px; */
+}
+
+/* 第二層 */
+/* 小行星防禦 */
+.content2 {
+    background-image: url(../images/space-1.jpg);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+/* 左側卡片 */
+.box3 {
+    width: 50vw;
+    height: 100vh;
+}
+.box3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+.box3 .card1 {
+    background-image: url(../images/asteroid-earth1.jpg);
+    background-size: cover;
+    opacity: 80%;
+    border: 1px solid white;
+    position: relative;
+    width: 60%;
+    height: 40%;
+    left: 30%;
+    top: 35%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box3 .card1:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box3 .card1 h2 {
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.box3 .card1 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 16px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 280px; */
+}
+
+/* 右側卡片 */
+.box4 {
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;  
+    justify-content: space-between;
+    padding: 30px;
+} 
+.box4 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.box4 .card1 {
+    background-image: url(../images/burning\ asteroid.jpg);
+    background-size: cover;
+    position: relative;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 40%;
+    height: 50%;
+    top: 25%;
+    cursor: pointer;
+    transition: transform 0.4s, opcity 0.4s;
+    margin: 20px;
+}
+.box4 .card1:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box4 .card1 h2 {
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.box4 .card2 {
+    background-image: url(../images/burning.jpg);
+    background-size: cover;
+    position: relative;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 40%;
+    height: 50%;
+    top: 25%;
+    cursor: pointer;
+    margin: 20px;
+}
+.box4 .card2:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box4 .card2 h2 {
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.box4 .card3 {
+    background-image: url(../images/asteroid-earth3.jpg);
+    background-size: cover;
+    position: relative;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 40%;
+    height: 50%;
+    top: 25%;
+    cursor: pointer;
+    margin: 20px;
+}
+.box4 .card3:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box4 .card3 h2 {
+    color: white;
+    font-size: 36px;
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+}
+
+/* 第三層 */
+.content3 {
+    background-image: url(../images/darkspace-2.jpg);
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+/* 左側卡片(軌道動力學) */
+.box5 {
+    background-image: url(../images/meteor\ shower.jpg);
+    background-size: 100%;
+    position: relative;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 25%;
+    height: 65%;
+    top: 20%;
+    left: 15%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box5:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box5 h2 {
+    font-size: 36px;
+    margin: 20px;
+    margin-top: 5%;
+}
+.box5 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 16px;
+    line-height: 40px;
+    margin: 20px;
+    /* margin-top: 160px; */
+}
+
+/* 右側卡片(DART計畫) */
+.box6 {
+    background-image: url(../images/space.jpg);
+    background-size: 100%;
+    position: relative;
+    opacity: 80%;
+    border: 1px solid white;
+    width: 25%;
+    height: 65%;
+    top: 20%;
+    left: 35%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box6:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 0.4s;
+    border: none;
+}
+.box6 h2 {
+    font-size: 36px;
+    margin: 20px;
+    margin-top: 5%;
+}
+.box6 p {
+    align-self: flex-end;
+    /* align-items: center; */
+    font-size: 16px;
+    line-height: 40px;
+    margin: 20px;
+}
+
+/* 頁尾區 */
+footer {
+    /* color: white; */
+    /* text-decoration: none; */
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+footer .topbar {
+    display: flex;
+}
+footer .nav {
+    display: flex;
+    text-decoration: none;
+}
+footer .nav li {
+    color: white;
+    margin: 2px;
+    width: 10rem;
+}
+footer .nav ul {
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Abel';
+    letter-spacing: 8px;
+    margin-right: 60px;
+}

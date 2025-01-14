@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../images/space-1.jpg);
+    background-size: cover;
+}
+.contentfirst {
+    height: 100vh;
+    width: 100%;
+}
+
+/* 導覽列 */
+.header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+.logo img {
+    margin: 20px;
+    width: 55px;
+    height: 55px;
+}
+
+.nav {
+    display: flex;
+}
+.header .nav a {
+    margin-right: 50px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav a:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    border-bottom:1.5px solid white;
+    transition: 0.4s;
+}
+
+/* 大標題 */
+.title {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    letter-spacing: 8px;
+}
+.title::before {
+    content: ''; 
+    position: absolute; 
+    top: 14%;
+    left: 2%;
+    width: 40%;
+    height: 1.5px; 
+    background-color: white; 
+}
+.title::after {
+    content: ''; 
+    position: absolute; 
+    top: 14%;
+    right: 2%;
+    width: 40%;
+    height: 1.5px; 
+    background-color: white; 
+}
+.words {
+    color: white;
+    font-size: 20px;
+    margin-left: 80px;
+    letter-spacing: 5px;
+    margin-top: -30px;
+}
+
+/* 中間內容 */
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    color: white;
+    margin-top: 70px;
+}
+
+.card1 {
+    background-image: url(../images/meteor&earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    width: 15%;
+    cursor: pointer;
+    margin: 30px;
+}
+.card1:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.card1 h2 {
+    font-size: 32px;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    background-image: url(../images/asteroid-hit.jpg);
+    background-size: cover;
+    opacity: 80%;
+    width: 15%;
+    cursor: pointer;
+    margin: 30px;
+}
+.card2:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.card2 h2 {
+    font-size: 32px;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card3 {
+    background-image: url(../images/earth&asteroid-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    width: 15%;
+    cursor: pointer;
+    margin: 30px;
+}
+.card3:hover {
+    opacity: 100%;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.card3 h2 {
+    font-size: 32px;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 彈出視窗 */
+.detail {
+    display: none;
+    position: relative;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background-color: #252945f2;
+    z-index: 999;
+    border-radius: 10px;
+}
+.detailcontent {
+    position: relative;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#detail-text {
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    color: white;
+    margin: 20px;
+}
+#detail-img {
+    width: 50%;
+    object-fit: contain;
+}
+.close-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 100%;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 998;
+    border: none;
+    background-color: transparent;
+}
+.close-btn::before {
+    content: "X";
+    color: white;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    line-height: 50%;
+}
+.close-btn:hover {
+    background-color: #041a2cc0;
+    color: white;
+    border-radius: 99px;
+}
+
+
+/* 頁尾區 */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+footer .topbar {
+    display: flex;
+}
+footer .nav {
+    display: flex;
+    text-decoration: none;
+}
+footer .nav li {
+    color: white;
+    margin: 2px;
+    width: 10rem;
+}
+footer .nav ul {
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+footer p {
+    color: white;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Abel';
+    letter-spacing: 8px;
+    margin-right: 60px;
+}

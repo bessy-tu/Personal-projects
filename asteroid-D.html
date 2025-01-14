@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小行星-恐龍滅絕原因</title>
+    <link rel="icon" href="./favicon.ico.png">
+
+    <link rel="stylesheet" href="./css/asteroid-D.css">
+</head>
+
+<body>
+    <section class="contentfirst">
+        <!-- 導覽列 -->
+        <header class="header">
+            <!-- <div class="logo"> -->
+            <a class="logo" href="./index.html"><img src="./images/logo.png" alt="">
+            </a>
+            <!-- </div> -->
+            <nav class="topbar">
+                <ul class="nav">
+                    <a href="./index.html">
+                        <li>首頁</li>
+                    </a>
+                    <a href="./asteroid-A.html">
+                        <li>小行星</li>
+                    </a>
+                    <a href="./defense.html">
+                        <li>小行星防禦</li>
+                    </a>
+                    <a href="./move.html">
+                        <li>軌道動力學</li>
+                    </a>
+                    <a href="./dart.html">
+                        <li>DART計畫</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="wrap">
+            <!-- 左側導覽 -->
+            <div class="sidenav">
+                <div class="title">
+                    <h2>小</h2>
+                    <h2>行</h2>
+                    <h2>星</h2>
+                </div>
+                <!-- <h2>小行星</h2> -->
+                <ul class="list">
+                    <li><a href="./asteroid-A.html">流星</a></li>
+                    <li><a href="./asteroid-T.html">通古斯大爆炸</a></li>
+                    <li><a href="./asteroid-U.html">隕石坑</a></li>
+                    <li><a href="./asteroid-D.html">恐龍滅絕原因</a></li>
+                </ul>
+
+            </div>
+
+            <!-- 主要內容區 -->
+            <main class="main">
+
+                <!-- 輪播圖 -->
+                <div class="carousel">
+                    <div class="carousel-img">
+                        <img src="./images/dinosaur.jpg" alt="">
+                        <img src="./images/dinosaur4.jpg" alt="">
+                        <!-- <img src="./images/galaxy.jpg" alt=""> -->
+                    </div>
+
+                    <!-- 左右控制按鈕 -->
+                    <button class="right" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="left" onclick="moveSlide(-1)">&#10094;</button>
+                </div>
+
+                <!-- 下方文字區 -->
+                <div class="words">
+                    <div class="words1">
+                        <h2>恐龍滅絕原因??</h2>
+                        <p>曾經稱霸地球的恐龍為什麼突然滅亡呢?
+                        </p>
+                        <p>小行星撞擊是恐龍滅絕事件的核心原因之一，也是地球歷史上最具影響力的災難性事件之一。這一撞擊發生在約6600萬年前，當時一顆約10公里直徑的小行星撞擊地球，改變了全球的環境，並對生物多樣性造成了極大的衝擊，導致了地球上近60%的生物滅絕。
+                            這次撞擊事件標誌著白堊紀結束，也被普遍的認為是導致恐龍滅絕的原因。
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </section>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <!-- LOGO區 -->
+        <a class="logo" href="./index.html"><img src="./images/logo.png" alt="">
+        </a>
+        <!-- 導覽列 -->
+        <div>
+            <nav class="topbar">
+                <ul class="nav">
+                    <li><a href="./index.html">首頁</a></li>
+
+                    <li>
+                        <a href="./asteroid-A.html">小行星</a>
+                        <ul>
+                            <li>流星</li>
+                            <li>通古斯大爆炸</li>
+                            <li>隕石坑</li>
+                            <li>恐龍滅絕原因</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="./defense.html">小行星防禦</a>
+                        <ul>
+                            <li>長期作用力</li>
+                            <li>核打擊</li>
+                            <li>動能撞擊偏轉技術</li>
+                        </ul>
+                    </li>
+                    <li><a href="./move.html">軌道動力學</a></li>
+                    <li><a href="./dart.html">DART計畫</a></li>
+                </ul>
+            </nav>
+            <p> copyright @ 2025小行星防禦<small>(學生練習作品)</small></p>
+        </div>
+    </footer>
+
+    <!-- jQuery原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- 自訂的Js -->
+    <script src="./js/asteroid.js"></script>
+</body>
+
+</html>

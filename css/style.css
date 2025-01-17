@@ -5,7 +5,6 @@
 /* 首頁 */
 body {
     width: 100%;
-    /* background-color: #04090D; */
 }
 
 .contentfirst {
@@ -19,6 +18,7 @@ body {
     height: 100vh;
     object-fit: cover;
 }
+
 /* 導覽列 */
 .header {
     width: 100%;

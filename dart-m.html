@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/dart-m.css">
+</head>
+
+<body>
+    <section class="contentfirst">
+        <!-- 導覽列 -->
+        <header class="header">
+            <a class="logo" href="./index.html"><img src="./images/logo.png" alt="">
+            </a>
+
+            <nav class="topbar">
+                <ul class="nav">
+                    <a href="./index.html">
+                        <li>首頁</li>
+                    </a>
+                    <a href="./asteroid-A.html">
+                        <li>小行星</li>
+                    </a>
+                    <a href="./defense.html">
+                        <li>小行星防禦</li>
+                    </a>
+                    <a href="./move.html">
+                        <li>軌道動力學</li>
+                    </a>
+                    <a href="./dart.html">
+                        <li>DART計畫</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="wrap">
+            <!-- 左側導覽 -->
+            <div class="sidenav">
+                <div class="title">
+                    <h2>DART</h2>
+                    <h2>計</h2>
+                    <h2>畫</h2>
+                </div>
+
+                <ul class="list">
+                    <li><a href="./dart.html">計畫背景</a></li>
+                    <li><a href="./dart-m.html">計畫目標</a></li>
+                    <li><a href="./dart-s.html">計畫實施</a></li>
+                    <li><a href="./dart-j.html">計畫結果</a></li>
+                </ul>
+            </div>
+
+            <!-- 主要內容區 -->
+            <main class="main">
+                <!-- 輪播圖 -->
+                <div class="carousel">
+                    <div class="carousel-img">
+                        <img src="./images/img2.png" alt="">
+                        <img src="./images/asteroid2.jpg" alt="">
+                        <img src="./images/asteroids-meteor.jpg" alt="">
+                    </div>
+
+                    <!-- 左右控制按鈕 -->
+                    <button class="right" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="left" onclick="moveSlide(-1)">&#10094;</button>
+                </div>
+
+                <!-- 下方文字區 -->
+                <div class="words">
+                    <h2>計畫目標</h2>
+                    <p>
+                        此計畫的目標就是雙星系統迪迪摩斯(Didymos)中的子星迪莫佛斯(Dimorphos)。
+                        發射日期在2021年的11月23日，打擊日期在2022年的9月26日。
+                    </p>
+                    <p class="p1">
+                        選擇它為打擊目標的原因有很多，其中最重要的原因就是因為可以通過地面上的望遠鏡去測量迪迪摩斯(Didymos)系統組合的亮度變化，來確定打擊後子星迪莫佛斯(Dimorphos)繞著母星(迪迪摩斯/Didymos)的軌道的週期變化。並且兩者都不在與地球相交的軌道上，若他們的軌道出現細微的變化，並不會對地球造成影響。
+                    </p>
+                </div>
+            </main>
+
+        </section>
+    </section>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <!-- LOGO區 -->
+        <a class="logo" href="./index.html"><img src="./images/logo.png" alt="">
+        </a>
+        <!-- 導覽列 -->
+        <div>
+            <nav class="topbar">
+                <ul class="nav">
+                    <li><a href="./index.html">首頁</a></li>
+
+                    <li>
+                        <a href="./asteroid-A.html">小行星</a>
+                        <ul>
+                            <li>流星</li>
+                            <li>通古斯大爆炸</li>
+                            <li>隕石坑</li>
+                            <li>恐龍滅絕原因</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="./defense.html">小行星防禦</a>
+                        <ul>
+                            <li>長期作用力</li>
+                            <li>核打擊</li>
+                            <li>動能撞擊偏轉技術</li>
+                        </ul>
+                    </li>
+                    <li><a href="./move.html">軌道動力學</a></li>
+                    <li><a href="./dart.html">DART計畫</a></li>
+                </ul>
+            </nav>
+            <p> copyright @ 2025小行星防禦<small>(學生練習作品)</small></p>
+        </div>
+    </footer>
+
+    <!-- jQuery原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- 自訂的Js -->
+    <script src="./js/asteroid.js"></script>
+</body>
+
+</html>

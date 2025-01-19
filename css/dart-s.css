@@ -10,6 +10,7 @@ body {
 
 .contentfirst {
     display: flex;
+    /* flex: 1; */
     justify-content: space-between;
     height: 290vh;
     width: 100%;

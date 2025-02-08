@@ -87,7 +87,6 @@ body {
     justify-content: end;
     font-size: 24px;
     padding: 15px;
-    /* margin-right: 25px; */
 }
 .list li:hover {
     transform: scale(1.05);
@@ -105,7 +104,6 @@ body {
     display: flex;
     flex-direction: column;
     top: 8%;
-    /* height: 90vh; */
     width: 100%;
     height: auto;
     margin-left: 10%;
@@ -118,7 +116,6 @@ body {
     top: 3%;
     left: 25%;
     width: 650px;
-    /* height: 450px; */
     height: 500px;
     overflow: hidden;
 }
@@ -165,12 +162,10 @@ button {
     letter-spacing: 10px;
 }
 .words p {
+    margin-top: 50px;
     font-size: 18px;
     letter-spacing: 5px;
     line-height: 35px;
-}
-.words .p1 {
-    margin-top: 50px;
 }
 
 /* 頁尾區 */
@@ -182,7 +177,6 @@ footer {
     background-color: rgb(12, 12, 12);
     width: 100%;
     margin-top: 80px;
-    /* z-index: 1; */
 }
 footer div {
     display: flex;

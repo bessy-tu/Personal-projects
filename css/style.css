@@ -151,7 +151,6 @@ body {
     cursor: pointer;
     color: white;
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 .box1 .card h2 {
@@ -174,12 +173,13 @@ body {
 .box2 {
     display: flex;
     position: relative;
-    /* width: 450px; */
     width: 50vw;
     height: auto;
 } 
 .box2 a {
     text-decoration: none;
+    /* width: 100%;
+    height: 100%; */
 }
 .box2 .card1 {
     background-image: url(../images/meteor\ shower-2.jpg);
@@ -188,7 +188,7 @@ body {
     background-size: cover;
     opacity: 80%;
     border: 1px solid white;
-    width: 45%;
+    width: 40%;
     height: 45%;
     top: 10%;
     left: 5%;
@@ -213,11 +213,9 @@ body {
 }
 .card1 p {
     align-self: flex-end;
-    /* align-items: center; */
     font-size: 14px;
     line-height: 40px;
     margin: 20px;
-    /* margin-top: 270px; */
 }
 
 .box2 .card2 {
@@ -306,7 +304,7 @@ body {
     background-size: cover;
     opacity: 80%;
     border: 1px solid white;
-    width: 35%;
+    width: 40%;
     height: 45%;
     right: 8%;
     top: 50%;
@@ -331,12 +329,10 @@ body {
 }
 .card4 p {
     align-self: flex-end;
-    /* align-items: center; */
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 3px;
     margin: 20px;
-    /* margin-top: 350px; */
 }
 
 /* 第二層 */
@@ -500,15 +496,16 @@ body {
 
 /* 第三層 */
 .content3 {
-    background-image: url(../images/darkspace-2.jpg);
-    background-size: 100%;
+    background-image: url(../images/DART-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     width: 100%;
     height: 500px;
 }
 /* 左側卡片(軌道動力學) */
-.box5 {
+/* .box5 {
     background-image: url(../images/meteor\ shower.jpg);
     background-size: 100%;
     position: relative;
@@ -537,29 +534,35 @@ body {
 }
 .box5 p {
     align-self: flex-end;
-    /* align-items: center; */
     font-size: 16px;
     line-height: 40px;
     margin: 20px;
-    /* margin-top: 160px; */
-}
+} */
 
 /* 右側卡片(DART計畫) */
 .box6 {
+    font-family: 'Abel';
     background-image: url(../images/space.jpg);
-    background-size: 100%;
+    background-size: cover;
     position: relative;
     opacity: 80%;
     border: 1px solid white;
     width: 25%;
     height: 65%;
     top: 20%;
-    left: 35%;
+    left: 15%;
     color: white;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+.box6 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
 }
 .box6:hover {
     opacity: 100%;
@@ -569,21 +572,23 @@ body {
 }
 .box6 h2 {
     font-size: 36px;
-    margin: 20px;
-    margin-top: 5%;
+    letter-spacing: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box6 p {
     align-self: flex-end;
-    /* align-items: center; */
+    align-items: center;
     font-size: 16px;
     line-height: 40px;
+    letter-spacing: 5px;
     margin: 20px;
 }
 
 /* 頁尾區 */
 footer {
-    /* color: white; */
-    /* text-decoration: none; */
+    font-family: 'Abel';
     display: flex;
     justify-content: space-between;
     background-color: rgb(12, 12, 12);

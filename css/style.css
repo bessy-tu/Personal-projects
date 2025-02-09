@@ -178,6 +178,8 @@ body {
 } 
 .box2 a {
     text-decoration: none;
+    color: white;
+    display: block;
     /* width: 100%;
     height: 100%; */
 }

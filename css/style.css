@@ -74,6 +74,18 @@ body {
     margin-top: -60px;
 }
 
+@media(max-width: 1536px) {
+    .name p {
+        font-size: 75px;
+        letter-spacing: 30px;
+        margin-left: -5%;
+        margin-top: 10%;
+    }
+    .name h1 {
+        font-size: 42px;
+        margin-left: 20%;
+    }
+}
 
 
 /* 飛行器初始位置 */
@@ -89,7 +101,6 @@ body {
 
     /*動畫效果*/
     transition: transform 5s ease-in;
-    /* transition: transform 10s ease-out;  */
 }
 
 /* 引言導語 */
@@ -190,7 +201,7 @@ body {
     background-size: cover;
     opacity: 80%;
     border: 1px solid white;
-    width: 40%;
+    width: 50%;
     height: 45%;
     top: 10%;
     left: 5%;
@@ -200,6 +211,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .box2 .card1:hover {
     opacity: 100%;
     transform: scale(1.05);
@@ -335,6 +347,12 @@ body {
     line-height: 40px;
     letter-spacing: 3px;
     margin: 20px;
+}
+
+@media(max-width: 1536px) {
+    .box2 .card1 {
+        width: 40%;
+    }
 }
 
 /* 第二層 */
@@ -494,6 +512,21 @@ body {
     display: flex;
     margin: 3%;
     justify-content: center;
+}
+
+@media(max-width: 1536px) {
+    .box4 .card1 h2 {
+        font-size: 28px;
+        margin-top: 10%;
+    }
+    .box4 .card2 h2 {
+        font-size: 28px;
+        margin-top: 25%;
+    }
+    .box4 .card3 h2 {
+        font-size: 28px;
+        margin-top: 0;
+    }
 }
 
 /* 第三層 */

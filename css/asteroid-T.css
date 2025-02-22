@@ -4,7 +4,6 @@
 
 body {
     width: 100%;
-    /* background-color: #04090D; */
     background-image: url(../images/background-meteor.jpg);
 }
 
@@ -13,6 +12,12 @@ body {
     justify-content: space-between;
     height: 100vh;
     width: 100%;
+}
+
+@media(max-width: 1536px) {
+    .contentfirst {
+        height: 115vh;
+    }
 }
 
 /* 導覽列 */
@@ -33,7 +38,6 @@ body {
 
 .nav {
     display: flex;
-    /* width: 100%; */
 }
 .nav a {
     margin-right: 50px;
@@ -97,6 +101,23 @@ body {
     color: white;
 }
 
+@media(max-width: 1536px) {
+    .sidenav {
+        width: 65%;
+        height: auto;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .list {
+        margin-top: 15%;
+    }
+    .list li {
+        font-size: 20px;
+        margin-right: 3%;
+    }
+}
+
 /*主要內容區*/
 .main {
     background-color: rgba(8, 29, 47, 0.8);
@@ -110,6 +131,14 @@ body {
     margin-right: 10%;
 }
 
+@media(max-width: 1536px) {
+    .main {
+        top: 10%;
+        height: 100vh;
+    }
+}
+
+/*輪播圖*/
 .carousel {
     position: relative;
     display: flex;
@@ -131,26 +160,24 @@ body {
     object-fit: cover;
 }
 
-/*左右控制按鈕*/
-/* button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
+@media(max-width: 1536px) {
+    .carousel {
+        left: 25%;
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .carousel-img {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+    .carousel-img img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
-.right {
-    right: 15px;
-}
-.left {
-    left: 15px;
-} */
-
 
 /*下方文字區*/
 .words {
@@ -182,7 +209,17 @@ body {
     margin-top: 72px;
 }
 
-
+@media(max-width: 1536px) {
+    .words {
+        width: 70%;
+    }
+    .words h2 {
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 16px;
+    }
+}
 
 
 /* 頁尾區 */

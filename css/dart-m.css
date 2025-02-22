@@ -87,7 +87,6 @@ body {
     justify-content: end;
     font-size: 24px;
     padding: 15px;
-    /* margin-right: 25px; */
 }
 .list li:hover {
     transform: scale(1.05);
@@ -95,6 +94,23 @@ body {
 .list a {
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 1536px) {
+    .sidenav {
+        width: 20%;
+        height: auto;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .list {
+        margin-top: 50%;
+    }
+    .list li {
+        font-size: 20px;
+        margin-right: 3%;
+    }
 }
 
 /*主要內容區*/
@@ -110,6 +126,12 @@ body {
     height: auto;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+@media(max-width: 1536px) {
+    .main {
+        top: 10%;
+    }
 }
 
 /*輪播圖*/
@@ -131,6 +153,25 @@ body {
     width: 650px;
     height: 450px;
     object-fit: contain;
+}
+
+@media(max-width: 1536px) {
+    .carousel {
+        left: 25%;
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .carousel-img {
+        display: flex;
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+    .carousel-img img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
 
 /*左右控制按鈕*/
@@ -171,6 +212,18 @@ button {
 }
 .words .p1 {
     margin-top: 50px;
+}
+
+@media(max-width: 1536px) {
+    .words {
+        width: 70%;
+    }
+    .words h2 {
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 16px;
+    }
 }
 
 /* 頁尾區 */

@@ -16,6 +16,12 @@ body {
     width: 100%;
 }
 
+@media(max-width: 1536px) {
+    .contentfirst {
+        height: 180vh;
+    }
+}
+
 /* 導覽列 */
 .header {
     width: 100%;
@@ -89,7 +95,6 @@ body {
     justify-content: end;
     font-size: 24px;
     padding: 15px;
-    /* margin-right: 25px; */
 }
 .list li:hover {
     transform: scale(1.05);
@@ -97,6 +102,23 @@ body {
 .list a {
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 1536px) {
+    .sidenav {
+        width: 20%;
+        height: auto;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .list {
+        margin-top: 50%;
+    }
+    .list li {
+        font-size: 20px;
+        margin-right: 3%;
+    }
 }
 
 /*主要內容區*/
@@ -112,6 +134,14 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+@media(max-width: 1536px) {
+    .main {
+        top: 6%;
+        height: 170vh;
+    }
+}
+
 /*輪播圖*/
 .carousel {
     position: relative;
@@ -129,6 +159,18 @@ body {
     width: 650px;
     height: 400px;
     object-fit: contain;
+}
+
+@media(max-width: 1536px) {
+    .carousel {
+        margin-top: 2%;
+        width: 500px;
+        height: 300px;
+    }
+    .carousel-img img {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 /* 下方文字區 */
@@ -174,6 +216,37 @@ body {
     margin-bottom: 50px;
 }
 
+@media(max-width: 1536px) {
+    .words {
+        width: 70%;
+    }
+    .words h2 {
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 16px;
+    }
+    .words .p1 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .words .p2 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .words .p3 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .words .p4 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .words .p5 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
 
 /* 頁尾區 */
 footer {

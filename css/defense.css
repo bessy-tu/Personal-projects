@@ -55,7 +55,7 @@ body {
     margin-top: 50px;
     letter-spacing: 8px;
 }
-.title::before {
+/* .title::before {
     content: ''; 
     position: absolute; 
     top: 14%;
@@ -72,7 +72,7 @@ body {
     width: 40%;
     height: 1.5px; 
     background-color: white; 
-}
+} */
 .words {
     color: white;
     font-size: 20px;
@@ -88,7 +88,7 @@ body {
     width: 100%;
     height: 60%;
     color: white;
-    margin-top: 70px;
+    margin-top: 3%;
 }
 
 .card1 {
@@ -220,6 +220,23 @@ body {
     border-radius: 99px;
 }
 
+@media(max-width: 1536px) {
+    .detailcontent {
+        max-width: 875px;
+    }
+
+    #detail-text {
+        font-size: 18px;
+        line-height: 45px;
+        letter-spacing: 5px;
+        color: white;
+        margin: 20px;
+    }
+    #detail-img {
+        width: 50%;
+        object-fit: contain;
+    }
+}
 
 /* 頁尾區 */
 footer {

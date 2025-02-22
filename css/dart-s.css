@@ -10,10 +10,15 @@ body {
 
 .contentfirst {
     display: flex;
-    /* flex: 1; */
     justify-content: space-between;
     height: 290vh;
     width: 100%;
+}
+
+@media(max-width: 1536px) {
+    .contentfirst {
+        height: 320vh;
+    }
 }
 
 /* 導覽列 */
@@ -34,7 +39,6 @@ body {
 
 .nav {
     display: flex;
-    /* width: 100%; */
 }
 .nav a {
     margin-right: 50px;
@@ -89,7 +93,6 @@ body {
     justify-content: end;
     font-size: 24px;
     padding: 15px;
-    /* margin-right: 25px; */
 }
 .list li:hover {
     transform: scale(1.05);
@@ -97,6 +100,23 @@ body {
 .list a {
     text-decoration: none;
     color: white;
+}
+
+@media(max-width: 1536px) {
+    .sidenav {
+        width: 20%;
+        height: auto;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .list {
+        margin-top: 50%;
+    }
+    .list li {
+        font-size: 20px;
+        margin-right: 3%;
+    }
 }
 
 /*主要內容區*/
@@ -113,13 +133,18 @@ body {
     margin-right: 10%;
 }
 
+@media(max-width: 1536px) {
+    .main {
+        top: 3.5%;
+        height: 310vh;
+    }
+}
+
 /*輪播圖*/
 .images {
     position: relative;
-    /* top: 3%; */
     left: 25%;
     width: 650px;
-    /* height: 450px; */
     height: 500px;
     overflow: hidden;
 }
@@ -132,6 +157,18 @@ body {
     width: 650px;
     height: 450px;
     object-fit: contain;
+}
+
+@media(max-width: 1536px) {
+    .images {
+        margin-top: 2%;
+        width: 500px;
+        height: 300px;
+    }
+    .images-img img {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 /* 下方文字區 */
@@ -156,6 +193,18 @@ body {
     margin-bottom: 50px;
 }
 
+@media(max-width: 1536px) {
+    .words {
+        width: 70%;
+    }
+    .words h2 {
+        font-size: 24px;
+    }
+    .words p {
+        font-size: 16px;
+    }
+}
+
 /* 第二層 */
 .words2 {
     font-family: 'Abel';
@@ -170,6 +219,15 @@ body {
     font-size: 18px;
     letter-spacing: 5px;
     line-height: 35px;
+}
+
+@media(max-width: 1536px) {
+    .words2 {
+        width: 70%;
+    }
+    .words2 p {
+        font-size: 16px;
+    }
 }
 
 /*輪播圖*/
@@ -230,6 +288,14 @@ button {
     height: 450px;
 }
 
+@media(max-width: 1536px) {
+    .words3 img {
+        margin-top: 5%;
+        width: 400px;
+        height: 400px;
+    }
+}
+
 /* 第四層 */
 .words4 {
     font-family: 'Abel';
@@ -258,6 +324,19 @@ button {
     font-size: 18px;
     letter-spacing: 5px;
     line-height: 35px;
+}
+
+@media(max-width: 1536px) {
+    .words4 {
+        width: 70%;
+    }
+    .words4 .box1 img {
+        width: 480px;
+        height: 250px;
+    }
+    .words4 .box2 p {
+        font-size: 16px;
+    }
 }
 
 /* 頁尾區 */

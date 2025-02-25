@@ -13,7 +13,6 @@ body {
 
 /* 背景圖 */
 .contentfirst img {
-    /* position: relative; */
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -96,8 +95,6 @@ body {
     height: 600px;
     top: -300px;
     left: 1800px;
-    /* transform: translate(50%, 50%) rotate(15deg); 螢幕外滑向中間 */
-    /* opacity: 0; */
 
     /*動畫效果*/
     transition: transform 5s ease-in;
@@ -142,6 +139,10 @@ body {
 }
 .box1 a {
     text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .box1 .card:hover {
     opacity: 100%;
@@ -161,8 +162,6 @@ body {
     left: 20%;
     cursor: pointer;
     color: white;
-    display: flex;
-    justify-content: space-between;
 }
 .box1 .card h2 {
     font-weight: bold;
@@ -172,12 +171,19 @@ body {
     margin-top: 20px;
 }
 .box1 .card p {
-    align-self: flex-end;
-    /* align-items: center; */
-    font-size: 14px;
+    font-size: 16px;
     line-height: 40px;
     margin: 20px;
-    /* margin-top: 210px; */
+    margin-top: 30%;
+}
+
+@media(max-width: 1536px) {
+    .box1 .card h2 {
+        font-size: 32px;
+    }
+    .box1 .card p {
+        margin-top: 13%;
+    }
 }
 
 /* 右側卡片 */
@@ -191,8 +197,8 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
 }
 .box2 .card1 {
     background-image: url(../images/meteor\ shower-2.jpg);
@@ -201,10 +207,10 @@ body {
     background-size: cover;
     opacity: 80%;
     border: 1px solid white;
-    width: 50%;
+    width: 35%;
     height: 45%;
     top: 10%;
-    left: 5%;
+    left: 3.5%;
     color: white;
     cursor: pointer;
     display: flex;
@@ -222,14 +228,9 @@ body {
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 10px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.card1 p {
-    align-self: flex-end;
-    font-size: 14px;
-    line-height: 40px;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 .card2 {
@@ -259,22 +260,13 @@ body {
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 10px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.card2 p {
-    align-self: flex-end;
-    /* align-items: center; */
-    font-size: 14px;
-    line-height: 40px;
-    margin: 20px;
-    /* margin-top: 40%; */
-    /* bottom: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 .card3 {
     background-image: url(../images/crater.jpg);
-    /* background-size: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -300,16 +292,9 @@ body {
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 10px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.card3 p {
-    align-self: flex-end;
-    /* align-items: center; */
-    font-size: 14px;
-    line-height: 40px;
-    margin: 20px;
-    /* margin-top: 40%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 .card4 {
@@ -318,7 +303,7 @@ body {
     background-size: cover;
     opacity: 80%;
     border: 1px solid white;
-    width: 40%;
+    width: 35%;
     height: 45%;
     right: 8%;
     top: 50%;
@@ -338,20 +323,23 @@ body {
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 10px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-.card4 p {
-    align-self: flex-end;
-    font-size: 14px;
-    line-height: 40px;
-    letter-spacing: 3px;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 1536px) {
-    .box2 .card1 {
-        width: 40%;
+    .card1 h2 {
+        font-size: 32px;
+    }
+    .card2 h2 {
+        font-size: 32px;
+    }
+    .card3 h2 {
+        font-size: 32px;
+    }
+    .card4 h2 {
+        font-size: 32px;
     }
 }
 
@@ -401,7 +389,7 @@ body {
     border: none;
 }
 .box3 .card1 h2 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 36px;
     letter-spacing: 10px;
     margin-left: 20px;
@@ -409,11 +397,19 @@ body {
 }
 .box3 .card1 p {
     align-self: flex-end;
-    /* align-items: center; */
     font-size: 16px;
     line-height: 40px;
     margin: 20px;
-    /* margin-top: 280px; */
+    margin-top: 25%;
+}
+
+@media(max-width: 1536px) {
+    .box3 .card1 h2 {
+        font-size: 32px;
+    }
+    .box3 .card1 p {
+        margin-top: 8%;
+    }
 }
 
 /* 右側卡片 */
@@ -539,40 +535,6 @@ body {
     width: 100%;
     height: 500px;
 }
-/* 左側卡片(軌道動力學) */
-/* .box5 {
-    background-image: url(../images/meteor\ shower.jpg);
-    background-size: 100%;
-    position: relative;
-    opacity: 80%;
-    border: 1px solid white;
-    width: 25%;
-    height: 65%;
-    top: 20%;
-    left: 15%;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.box5:hover {
-    opacity: 100%;
-    transform: scale(1.05);
-    transition: 0.4s;
-    border: none;
-}
-.box5 h2 {
-    font-size: 36px;
-    margin: 20px;
-    margin-top: 5%;
-}
-.box5 p {
-    align-self: flex-end;
-    font-size: 16px;
-    line-height: 40px;
-    margin: 20px;
-} */
 
 /* 右側卡片(DART計畫) */
 .box6 {
@@ -588,9 +550,6 @@ body {
     left: 15%;
     color: white;
     cursor: pointer;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
 }
 .box6 a {
     display: block;

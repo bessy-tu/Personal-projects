@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // $('.smoove').smoove();  // 確保正確初始化
 
     // 所有.smoove共用
     $('.smoove').smoove({
@@ -33,9 +32,3 @@ $(document).ready(function () {
 
 
 });
-
-// 通常啟用jQuery獨立打包的套件 (獨立放在外面)
-// $('.smoove').smoove({
-//     offset: 400
-// });
-

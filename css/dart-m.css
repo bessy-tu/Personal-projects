@@ -32,7 +32,6 @@ body {
 
 .nav {
     display: flex;
-    /* width: 100%; */
 }
 .nav a {
     margin-right: 50px;
@@ -99,7 +98,6 @@ body {
 @media(max-width: 1536px) {
     .sidenav {
         width: 20%;
-        height: auto;
     }
     .title {
         font-size: 24px;
@@ -121,7 +119,6 @@ body {
     display: flex;
     flex-direction: column;
     top: 8%;
-    /* height: 90vh; */
     width: 100%;
     height: auto;
     margin-left: 10%;
@@ -140,7 +137,6 @@ body {
     top: 3%;
     left: 25%;
     width: 650px;
-    /* height: 450px; */
     height: 500px;
     overflow: hidden;
 }
@@ -235,7 +231,6 @@ footer {
     background-color: rgb(12, 12, 12);
     width: 100%;
     margin-top: 80px;
-    /* z-index: 1; */
 }
 footer div {
     display: flex;

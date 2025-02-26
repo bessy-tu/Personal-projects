@@ -27,5 +27,4 @@ $(document).ready(function () {
         $images.css("transform", `translateX(-${index * 450}px)`);
     }
 
-   
 });
